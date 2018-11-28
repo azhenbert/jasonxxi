@@ -1,0 +1,140 @@
+#carouselExampleIndicators {
+  width: 100%;
+  height: 350px;
+}
+
+.carousel-inner {
+  height: 100%;
+}
+
+.carousel-item {
+  background-size: cover;
+  background-position: 50% 50%;
+  width: 100%;
+  height: 100%;
+}
+
+.card-img-top {
+  height: 350px;
+}
+
+.card-footer {
+  background-color: #101010;
+  text-align: center;
+}
+
+.navbar {
+  background-color: #000;
+}
+
+body {
+  background-color: #202020;
+  font-family:Oswald;
+  color:#fff;
+  padding-top: 54px;
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 56px;
+  }
+}
+
+.bgcontent {
+  background-color: #101010;
+}
+
+@media (max-width: 500px) {
+  .bgcontent {
+    padding-top: 56px;
+  }
+}
+
+footer {
+  background-color: #000;
+}
+
+.card {
+  background-color: #101010;
+  border-color: #101010;
+}
+
+a {
+  color: #fff;
+}
+
+a:hover {
+  color: #cc0000;
+  transition: .7s;
+}
+
+.search-custom {
+  width:320px;
+}
+
+@media screen and (max-width: 400px) {
+  .search-custom {
+    width: 265px;
+  }
+}
+
+#details {
+  float: right;
+  line-height: 2em;
+  color: #fff;
+}
+
+#overview {
+  color: #fff;
+  font-family: Lato;
+}
+
+.red {
+  color: #cc0000;
+  font-size: 1.5em;
+}
+
+#bgmovie {
+  background-size: cover;
+}
+
+.bgdetails {
+  background: rgba(0,0,0,.85);
+}
+
+@media (max-width: 500px) {
+  .bgdetails {
+    padding-top: 56px;
+  }
+}
+
+h2 a {
+  color: #c0c0c0;
+}
+
+.profil {
+  width: 300px;
+}
+
+.dataprofil {
+  font-size: 1.3em;
+  padding-left: 100px;
+  padding-right: 100px;
+  color: #cc0000;
+}
+
+@media screen and (max-width: 1000px) {
+  .dataprofil {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+#biografi {
+  font-family: Lato;
+  color: #fff;
+}
+
+.biodata {
+  color: #fff;
+}

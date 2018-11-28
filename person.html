@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>JASONXXI</title>
+
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,700|Oswald:300" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styleku.css">
+
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt=""></a>
+
+        <form action="result.html" class="input-group search-custom">
+          <select class="form-control col-lg-4" name="cat">
+              <option value="movie">Movies</option>
+              <option value="tv">TV Shows</option>
+              <option value="person">People</option>
+            </select>
+            <input type="text" class="form-control col-lg-8" name="q" autocomplete="off" placeholder="Search ...">
+            <button class="btn btn-secondary" type="submit"><span class="fa fa-search"></span></button>
+        </form>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Movies</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="movies.html?cat=now_playing">Now Playing</a>
+                <a class="dropdown-item" href="movies.html?cat=popular">Popular</a>
+                <a class="dropdown-item" href="movies.html?cat=top_rated">Top Rated</a>
+                <a class="dropdown-item" href="movies.html?cat=upcoming">Upcoming</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">TV Shows</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="tv_shows.html?cat=popular">Popular</a>
+                <a class="dropdown-item" href="tv_shows.html?cat=top_rated">Top Rated</a>
+                <a class="dropdown-item" href="tv_shows.html?cat=on_the_air">On TV</a>
+                <a class="dropdown-item" href="tv_shows.html?cat=airing_today">Airing Today</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="people.html">People</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+          </ul>
+        </div>
+
+
+
+      </div>
+    </nav>
+
+    <div id="bgtv">
+
+      <div class="container bgdetails">
+
+        <div class="row">
+
+          <div class="col-lg-12 my-5">
+
+            <span id="person_title"></span>
+
+            <div id="details" class="col-lg-8 col-md-8 my-2">
+
+              <h1 id='title'></h1>
+              <span id='tagline' class="red"></span><br>
+              <p id='overview'></p><br><br>
+              <div class='row no-padding'>
+                <div class='col-lg-6'>Place of Birth :<br><span id='birth_place' class="red"></span></div>
+                <div class='col-lg-6'>Birth Date :<br><span id='birth_date' class="red"></span></div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <footer class="py-5">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; <a href="http://fb.me/xjas0nz">Jason Loardy</a> 2018</p>
+      </div>
+    </footer>
+
+    <script src="js/jquery/jquery.min.js"></script>
+    <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="js/numeral.min.js"></script>
+    <script type="text/javascript" src="js/jasonxxi.js"></script>
+    <script type="text/javascript">
+    getPerson();
+    </script>
+
+  </body>
+
+</html>

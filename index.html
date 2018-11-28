@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>JASONXXI</title>
+
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,700|Oswald:300" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styleku.css">
+
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt=""></a>
+
+        <form action="result.html" class="input-group search-custom">
+          <select class="form-control col-lg-4" name="cat">
+              <option value="movie">Movies</option>
+              <option value="tv">TV Shows</option>
+              <option value="person">People</option>
+            </select>
+            <input type="text" class="form-control col-lg-8" name="q" autocomplete="off" placeholder="Search ...">
+            <button class="btn btn-secondary" type="submit"><span class="fa fa-search"></span></button>
+        </form>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Movies</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="movies.html?cat=now_playing">Now Playing</a>
+                <a class="dropdown-item" href="movies.html?cat=popular">Popular</a>
+                <a class="dropdown-item" href="movies.html?cat=top_rated">Top Rated</a>
+                <a class="dropdown-item" href="movies.html?cat=upcoming">Upcoming</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">TV Shows</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="tv_shows.html?cat=popular">Popular</a>
+                <a class="dropdown-item" href="tv_shows.html?cat=top_rated">Top Rated</a>
+                <a class="dropdown-item" href="tv_shows.html?cat=on_the_air">On TV</a>
+                <a class="dropdown-item" href="tv_shows.html?cat=airing_today">Airing Today</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="people.html">People</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+          </ul>
+        </div>
+
+
+
+      </div>
+    </nav>
+
+    <div class="container bgcontent">
+
+      <div class="row no-gutters">
+
+        <div class="col-lg-12">
+
+          <div id="carouselExampleIndicators" class="carousel slide my-4" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div id="banner" class="carousel-inner" role="listbox">
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+
+
+
+
+        </div>
+
+        <div class="col-lg-6">
+        <h2><a href="movies.html?cat=now_playing">Now Playing Movies</a></h2>
+        <div id="movie_nowplaying" class="row no-gutters"></div>
+        </div>
+
+        <div class="col-lg-6">
+        <h2><a href="tv_shows.html?cat=popular">Popular TV Shows</a></h2>
+        <div id="tv_popular" class="row no-gutters"></div>
+        </div>
+
+        <div class="col-lg-6">
+        <h2><a href="movies.html?cat=popular">Popular Movies</a></h2>
+        <div id="movie_popular" class="row no-gutters"></div>
+        </div>
+
+        <div class="col-lg-6">
+        <h2><a href="tv_shows.html?cat=top_rated">Top Rated TV Shows</a></h2>
+        <div id="tv_toprated" class="row no-gutters"></div>
+        </div>
+
+        <div class="col-lg-6">
+        <h2><a href="movies.html?cat=top_rated">Top Rated Movies</a></h2>
+        <div id="movie_toprated" class="row no-gutters"></div>
+        </div>
+
+        <div class="col-lg-6">
+        <h2><a href="tv_shows.html?cat=on_the_air">Currently Airing TV Shows</a></h2>
+        <div id="tv_airing" class="row no-gutters"></div>
+        </div>
+
+        <div class="col-lg-6">
+        <h2><a href="movies.html?cat=upcoming">Upcoming Movie</a></h2>
+        <div id="movie_upcoming" class="row no-gutters"></div>
+        </div>
+
+        <div class="col-lg-6">
+        <h2><a href="tv_shows.html?cat=airing_today">TV Shows Airing Today</a></h2>
+        <div id="tv_airingtoday" class="row no-gutters"></div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <footer class="py-5">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; <a href="http://fb.me/xjas0nz">Jason Loardy</a> 2018</p>
+      </div>
+    </footer>
+
+    <script src="js/jquery/jquery.min.js"></script>
+    <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="js/jasonxxi.js"></script>
+    <script type="text/javascript">
+      index_movielist();
+    </script>
+
+  </body>
+
+</html>

@@ -1,0 +1,6 @@
++50 utk projek selesai dan di commit sblm batas akhir
++15*(21-21) = 0 untuk commit terakhir sblm tgl batas akhir
++40 utk informasi minimal selesai dan tampil dgn baik, sesuai butir 2 pd bagian tugas
++200 utk fitur tambahan
++50 utk pencarian film
++280 utk selector css
